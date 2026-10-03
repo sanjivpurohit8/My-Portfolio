@@ -1,0 +1,208 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00adb5;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #cccccc;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    background-color: #1e1e1e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #04cbd6;
+    color: #121212;
+}
+
+
+
+.imageeee {
+    display: block;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    margin: 40px auto 20px;
+
+    border: 4px solid #00adb5;
+    border-radius: 50%;
+}
+
+
+
+
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+
+
+
+#home {
+    text-align: center;
+}
+
+#home p {
+    max-width: 650px;
+    margin: auto;
+}
+
+
+
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+
+
+
+a {
+    color: #00adb5;
+}
+
+#Projects a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+
+    background-color: #049ba3;
+    color: #121212;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#Projects a:hover {
+    background-color: #eeeeee;
+}
+
+
+
+
+#contact {
+    min-height: 100px;
+}
+
+#contact a {
+    margin-right: 15px;
+}
+
+
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    border-top: 1px solid #333333;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .imageeee {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .imageeee {
+        width: 150px;
+        height: 150px;
+    }
+}
